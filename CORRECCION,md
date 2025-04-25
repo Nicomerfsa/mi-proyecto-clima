@@ -1,0 +1,22 @@
+#   Revisión y Corrección de Código
+
+**1. ¿Qué mala práctica identificaste?**
+
+El uso de emojis como iconos en el CSS, específicamente en las clases de utilidad como `.icon-sunny::before { content: "☀️"; }`.
+
+**2. ¿Por qué se considera una mala práctica?**
+
+Los emojis pueden verse diferentes en distintos sistemas operativos y navegadores, afectando la apariencia de la aplicación.
+Los emojis no se pueden personalizar fácilmente con CSS (color, tamaño, etc.).
+Los lectores de pantalla pueden no interpretar correctamente los emojis.
+
+**3. ¿Cómo la solucionaste?**
+
+Reemplacé los emojis por iconos de Font Awesome.  Primero, incluí la librería de Font Awesome en el HTML del proyecto (esto es un paso que no se ve en el código proporcionado, pero es necesario).  Luego, modifiqué el CSS para usar los códigos de los iconos de Font Awesome y la familia de la fuente.
+
+**4. ¿Qué beneficios aporta tu solución?**
+
+Los iconos de Font Awesome se ven igual en todos los navegadores y sistemas operativos.
+Los iconos de Font Awesome se pueden personalizar fácilmente con CSS.
+Las fuentes de iconos son mejor interpretadas por los lectores de pantalla.
+ Es más fácil gestionar y actualizar iconos desde una librería que mantener una colección de emojis.
